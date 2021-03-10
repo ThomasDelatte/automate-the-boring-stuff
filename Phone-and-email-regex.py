@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# Simple Regex program to learn about regex
 
 import pyperclip
 import re
@@ -37,6 +38,17 @@ for groups in regexPhone.findall(text):
     
 for groups in regexEmail.findall(text):
     matches.append(groups[0])
-    
-# TODO: find pyperclip equivalent for WSL
 
+# Copy the matches found to the clipboard
+if len(matches) > 0:
+    pyperclip.copy('\n'.join(matches))
+    print('Matches copied to the clipboard')
+    print('\n'.join(matches))
+else:
+    print('No match was found.')
+    
+# TO DO: find pyperclip equivalent for WSL
+# TO DO: identify website URLs that begin with http:// or https://
+# TO DO: find dates and clean them up in a single standard format.
+# TO DO: find common typos such as multiple spaces between words or repeated words.
+# TO DO: write a function that takes a string and does teh same as the strip() string method.
