@@ -1,4 +1,10 @@
+#!usr/bin/env python3
+
 # Short program: Conway's Game of Life
+
+# TO DO: better rendition
+# TO DO: add option - possibility to interrupt the execution after X steps.
+
 # It is an example of cellular automata: a set of rules governing the behavior of a field made up of discrete cells.
 # Even though the rules re simple, some surprising behaviors emerge: the patterns can move, self-replicate and even mimic CPUs.
 
