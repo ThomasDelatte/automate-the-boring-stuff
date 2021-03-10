@@ -1,6 +1,7 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # Simple Regex program to learn about regex
 
+# TO DO: find pyperclip solution or workaround for WSL
 import pyperclip
 import re
 
@@ -12,11 +13,11 @@ regexPhone = re.compile(r'''(
      (\s|-|\.)                      # separator
      (\d{4})                        # last 4 digits
      (\s*(ext|x|ext.)\s*(\d{2,5}))? # extension
-     )''', re.VERBOSE)))
+     )''', re.VERBOSE)
 
 
 # Regex for email addresses
-regexEmail = .compile(r'''(
+regexEmail = re.compile(r'''(
     [a-zA-Z0-9._%+-]+    # name of the user
     @                    # @ symbol
     [a-zA-Z0-9.-]+       # name of the domain
@@ -47,7 +48,7 @@ if len(matches) > 0:
 else:
     print('No match was found.')
     
-# TO DO: find pyperclip equivalent for WSL
+
 # TO DO: identify website URLs that begin with http:// or https://
 # TO DO: find dates and clean them up in a single standard format.
 # TO DO: find common typos such as multiple spaces between words or repeated words.
