@@ -49,7 +49,13 @@ else:
     print('No match was found.')
     
 
-# TO DO: identify website URLs that begin with http:// or https://
+# Regex for URL
+regexURL = re.compile(r'''(
+    (http[s]?:\/\/)?     
+    ([^\/s]+\/)
+    (.*)
+    )''', re.VERBOSE)  
+
 # TO DO: find dates and clean them up in a single standard format.
 # TO DO: find common typos such as multiple spaces between words or repeated words.
 # TO DO: write a function that takes a string and does teh same as the strip() string method.
