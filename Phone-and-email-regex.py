@@ -57,5 +57,7 @@ regexURL = re.compile(r'''(
     )''', re.VERBOSE)  
 
 # TO DO: find dates and clean them up in a single standard format.
+
 # TO DO: find common typos such as multiple spaces between words or repeated words.
-# TO DO: write a function that takes a string and does teh same as the strip() string method.
+
+# TO DO: function that takes a string and imitates strip() string method.
